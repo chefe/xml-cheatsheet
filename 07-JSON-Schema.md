@@ -104,19 +104,6 @@ properties, additionalProperties
         "additionalItems": false
       }
     },
-    "scene": {
-      "type": "object",
-      "properties": {
-        "description": { "type": "string" },
-        "stuntman": { "type": "boolean" },
-        "type": {
-          "enum": ["kiss", "action"]
-        }
-      },
-      "additionalProperties": {
-        "type": "string"
-      }
-    },
     "year": {
       "oneOf": [
         {

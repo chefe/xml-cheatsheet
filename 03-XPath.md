@@ -37,6 +37,7 @@ for $i in distinct-values(//bond)
 if(count(/movie[regie = "John"]) > 1)
     then "more than one"
     else "exactly one"
+    (: oder auch else() :)
 ```
 
 ## Funktionen in XPath
