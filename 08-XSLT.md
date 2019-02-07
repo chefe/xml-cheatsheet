@@ -1,6 +1,6 @@
 # XSLT
 
-## Beispiel fpr einfaches XSLT
+## Beispiel für einfaches XSLT
 ```xml
 <?xml version="1.0" ?>
 <xsl:stylesheet version="1.0"

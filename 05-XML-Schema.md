@@ -33,6 +33,8 @@
 ```
 
 ## Elemente und Attribute qualifizieren
+* qualifizieren = im Namespace verfügbar machen
+* qualified = muss mit Präfix benutzt werden
 * `elementFormDefault="qualified"`
 * `attributeFormDefault="unqualified"`
 
@@ -232,7 +234,7 @@ minLength, pattern, totalDigits, whiteSpace
 	* Aufteilen in mehrere Dateien
 	* alle definieren den gleichen Namespace
 * `import`
-	* für anderen Targe-tNamespace
+	* für anderen Target-Namespace
 
 ## Dokumentation
 * `<annotation>` ist Container
