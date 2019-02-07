@@ -46,8 +46,10 @@ properties, additionalProperties
 ## Beispiel
 ```json
 {
-  "$id": "http://ex.com/movie.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://unique.identifier.uri/movie.json",
   "title": "James Bond Movie Casting",
+  "description": "random description",
   "definitions": {
     "person": {
       "type": "object",
@@ -125,3 +127,10 @@ properties, additionalProperties
   }
 }
 ```
+
+## Techniken für komplexe Strukturen
+
+* **Reuse**: Wiederverwenden von Referenzen
+* **Rekursion**: In sich selbst Wiederverwendent
+* **Extend**: Erweitern (`anyOf`)
+
