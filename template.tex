@@ -1,0 +1,78 @@
+\documentclass[10pt,a4paper,twocolumn]{scrartcl}
+
+% set language and font styling
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% set page margins
+\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+% disable section numbering
+\setcounter{secnumdepth}{0}
+
+% set some variable
+\newcommand{\Title}{$title$}
+\newcommand{\Modul}{$modul$}
+\newcommand{\Author}{\url{https://github.com/chefe}}
+\newcommand{\Date}{\today}
+
+% set document properties
+\title{\Title}
+\date{\Date}
+\author{\Author}
+
+% include package to get page count
+\usepackage[lastpage,user]{zref}
+
+% include package for links
+\usepackage[hidelinks]{hyperref}
+
+% include package to setup page header and footer
+\usepackage{fancyhdr}
+
+% set page header and footer
+\pagestyle{fancy}
+\lhead{\Title}
+\rhead{\Author}
+\lfoot{\Modul}
+\cfoot{\Date}
+\rfoot{Seite \thepage\ von \zpageref{LastPage}}
+
+% add line between page header and content
+\renewcommand{\headrulewidth}{0.4pt}
+
+% add line between page footer and content
+\renewcommand{\footrulewidth}{0.4pt}
+
+% use utf8 for special chars
+\usepackage[utf8]{inputenc}
+
+% disable paragraph indentation
+\setlength{\parindent}{0mm}
+
+% package for code listenings
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\scriptsize,breaklines=true}
+
+% fix for pandoc build
+\newcommand{\passthrough}{}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% start document
+\begin{document}
+
+% insert title
+\maketitle
+
+% add space after title
+\vspace{2cm}
+
+% adjust style of title page
+\thispagestyle{fancy}
+
+% insert content here
+$body$
+
+% end document
+\end{document}
