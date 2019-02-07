@@ -1,11 +1,32 @@
 # JSON Basics
 
+## Vorteile
+* Einfacher zum lesen und schreiben
+  - | json lib. ebenfalls leichtgewichtig
+  - | rendering / parsing / processing schnell
+* Mensch lesbar (plain text)
+  - | Alles strukturiert durch textual Charakter
+* Sprachunabhängig
+  - | Selbe Datentypen wie beinahe alle Sprachen
+  - | JSON mapping auf Objekte ist einfache
+* Sehr leichtgewichtig
+
+## Nachteile
+
+* JSON ist **keine Dokumenten Markupsprache**
+* **Namespaces** werden **nicht** unterstützt
+* Datenvalidierung (JSONSchema) noch im draft
+* JSONPath stark limitiert
+
 ## Anwendungsfälle
 * Data Exchange
 * Data Storing
-* JSON-RPC
-* JSON-WSP
-* Web Services und AJAX
+* JSON-WSP (Web Service Protocol)
+  - | entspricht WSTL von XML
+* Web Services und AJAX (Hauptnutzen)
+  - | da JSON kompakt
+  - | JavaScript kann gut mit JSON umgehen
+* JSON-RPC (Remote Procedural Call)
 
 ## Datentypen
 * Strings (`"Foo Bar"`)
@@ -14,3 +35,20 @@
 * Null (`null`)
 * Arrays (`[ ... ]`)
 * Objects (`{ ... }`)
+
+## Unterschied JavaScript zu JSON
+
+* JavaScript erlaubt nicht alle Unicode Zeichen
+* JavaScript hat Keys mit `"`
+* JavaScript kann Funktionen als Wert haben
+* JSON benötigt immer `"`
+
+## XML zu JSON
+
+* JSON kompakter, einfacher und leserlicher
+* JSON als Datenexchangeformat, XML als Markupsprache
+* JSON data-zentrischer Nutzen, XML Data- und Dokumentzentrisch und Hyprid
+* XML kennt objekt referenzen
+* XMLSchema kennt komplexe Datentypen und Referenzen, JSONSchema weniger
+* XPath und XQuery stabil und reifer als JSONPath
+* XSLT ermöglicht XML transformationen, neu auch Input von JSON

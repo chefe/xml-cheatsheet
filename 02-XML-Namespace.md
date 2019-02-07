@@ -1,11 +1,16 @@
 # XML Namespace
 
+## URN / URL / URI
+*Uniform Resource Identifier* überklasse von
+Ort (*URLocation*) und Was (URNamespace).
+
 ## Default-Namespace
 ```xml
 <svg xmlns="http://www.w3.org/2000/svg">
     <!-- ... -->
 </svg>
 ```
+* Attribute nicht implizit im default-NS!
 
 ## Expliziter Namespace
 ```xml

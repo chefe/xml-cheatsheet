@@ -177,7 +177,7 @@ minLength, pattern, totalDigits, whiteSpace
 	</xs:simpleType>
 </xs:element>
 
-<!-- Anwendung -->
+<!-- Anwendung (Spacing = Trennung) -->
 <months>January June December</months>
 ```
 
