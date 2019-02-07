@@ -1,5 +1,29 @@
 # XML Basics
 
+## Vergleich Binär / Text Dokument
+
+Binär:
+
+* (+) kompakte Repräsentation
+* (+) benötigt wenig Speicher
+* (+) weniger Bandbreite für Transport
+
+Text:
+
+* (+) Leserlich für Mensch und Maschine
+* (+) einfacheres Parsing
+* (-) Metadaten muss von Text separiert werden
+
+## Metadaten
+
+Metadaten sind Informationen für Information. Beinhaltet;
+Encoding, Version, Autor, Sprache, Representation, ...
+
+## Markuplanguage
+
+Eine Sprache die Metainformationen von Daten definiert.
+SGML (Vor XML) und XML (Extensible Markup Language)
+
 ## Vorteile von XML
 * Daten- und Dokumentenzentrisch
 * keine Vorgaben der Metadaten
@@ -9,23 +33,44 @@
 
 ## Anwendungsfälle
 * Konfiguration & Logging
-* Webservices
+* Webservices (UDDI)
 * Webinhalte und Zeichensetzung
-* Austausch zwischen Business
+* Austausch zwischen Business (B2C / B2B) - erfolgreichsten
 * Datenaustausch (Data carrier)
 
+## XML-RPC
+Hat eine Middleware die XML zum Übertragen nutzt aber
+höhere Abstraktion ist nicht in XML.
+
+## SOAP
+Nachrichtensystem das XML verwendet. Nachrichten sind
+auch in XML.
+
+## WSDL
+WSDL beschreibt Services, Endpunkte und Responses,
+aus WSDL kann auch code generiert werden.
+
+## Gleichheit
+Selbes **bitpattern** entspricht **Gleichheit**.
+
+## Equivalence
+Ist die **prozessierte Darstellung** gleich, sind
+die Dokumente **equivalent**.
+
 ## XML-Prolog
+
+* Erste Stelle im Dokument und ist optional
 ```xml
-<?xml version="1.0" encoding="UTF-8"
+<?xml version="1.0" encoding='UTF-8'
     standalone="yes" ?>
 ```
 
 ## Sonderzeichen
-* `&lt;` (less than)
-* `&gt;` (greater than)
-* `&amp;` (ampersand)
-* `&apros;` (apostrophe)
-* `&quote;` (quotation mark)
+* `&lt;` (less than | `<`)
+* `&gt;` (greater than | `>`)
+* `&amp;` (ampersand | `&`)
+* `&apros;` (apostrophe | `)
+* `&quote;` (quotation mark | `"`)
 
 ## Data Section
 ```xml
@@ -39,6 +84,8 @@
 ```
 
 ## Processing Instruction
+
+* Nach Prolog und ist optional
 ```xml
 <?xml-stylesheet type="text/xsl"
     href="transformer.xslt" ?>

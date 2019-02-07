@@ -49,9 +49,9 @@
 
 % limit header spaceing
 \usepackage{titlesec}
-\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
 % add line between page footer and content
 \renewcommand{\footrulewidth}{0.4pt}
@@ -65,6 +65,7 @@
 % package for code listenings
 \usepackage{listings}
 \lstset{basicstyle=\ttfamily\scriptsize,breaklines=true,aboveskip=0pt,belowskip=0pt}
+\lstset{framesep=0pt}
 
 % fix for pandoc build
 \newcommand{\passthrough}{}
