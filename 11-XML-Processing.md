@@ -1,6 +1,6 @@
-# XML Processing
+# Processing
 
-## Pull vs Push processing
+## XML Pull vs Push processing
 * eventbasiert (push)
     * Benachrichtigung bei spezifischen Elementen
     * Framework hat Kontrolle
@@ -9,7 +9,7 @@
     * Etwickler übernimmt Kontrolle
     * bietet mehr Möglichkeiten
 
-## in-memory vs sequential
+## XML in-memory vs sequential
 * in-memory
     * ist als Baum vorhanden
     * vereinfacht das Arbeiten

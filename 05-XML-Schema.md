@@ -107,6 +107,7 @@ minLength, pattern, totalDigits, whiteSpace
 	</xs:complexType>
 </xs:element>
 ```
+* Kann kein Parent oder Child sein
 
 ## Attribut auf einfachem Typ
 ```xml
@@ -235,6 +236,23 @@ minLength, pattern, totalDigits, whiteSpace
 	* alle definieren den gleichen Namespace
 * `import`
 	* für anderen Target-Namespace
+
+## Atomic
+Elemente ohne Subelemente `<xs:element .. />`.
+
+## XML Schema (XSD) Vorteile zu DTDs
+
+- XML verwendet namespaces
+- Komplexere und benutzerdefinierbare Strukturen und Datentypen
+- Validation inline möglich
+- XSD verwendet XML
+- XSD hat Referenzbeziehungen
+
+## Gründe für XML Schemas
+
+1. XML Schema von Nutzerdefiniert und ermöglicht direkte Validierung.
+2. Validatoren generell Deterministisch, XMLSchema für Datenstrukturbeschreibung nutzen.
+3. XMLSchema beim schreiben oder lesen für die Validierung verwenden.
 
 ## Dokumentation
 * `<annotation>` ist Container

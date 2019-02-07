@@ -1,5 +1,11 @@
 # Prorammierung in JS
 
+## JSON mit JavaScript Verwendung
+* Daten transferieren
+* user Input
+* Daten speichern
+* Daten validieren
+
 ## Same-origin policy
 verbietet andere Quellen
 
@@ -13,6 +19,8 @@ verbietet andere Quellen
 * Daten laden via embedded resources
 * umgehen der same-origin policy
 * JS kommt zurück, ruft callback auf
+* (-) Kein Errorhandling
+* (-) JSONP unsicher wegen einfachem cross-side scriptinjection
 
 ## JSON in JavaScript
 ```js
