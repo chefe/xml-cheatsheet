@@ -14,7 +14,7 @@
 % set some variable
 \newcommand{\Title}{$title$}
 \newcommand{\Modul}{$modul$}
-\newcommand{\Author}{\url{https://github.com/chefe}}
+\newcommand{\Author}{\url{https://github.com/chefe/xml-cheatsheet}}
 \newcommand{\Date}{\today}
 
 % set document properties
@@ -64,8 +64,18 @@
 
 % package for code listenings
 \usepackage{listings}
-\lstset{basicstyle=\ttfamily\scriptsize,breaklines=true,aboveskip=-3pt,belowskip=-3pt}
+\usepackage{xcolor}
+
+\lstset{basicstyle=\ttfamily\scriptsize}
+\lstset{breaklines=true}
+\lstset{aboveskip=-3pt}
+\lstset{belowskip=-3pt}
 \lstset{framesep=0pt}
+\lstset{showstringspaces=false}
+\lstset{keywordstyle=\bfseries\color{green!40!black}}
+\lstset{commentstyle=\itshape\color{purple!40!black}}
+\lstset{identifierstyle=\color{green!40!black}}
+\lstset{stringstyle=\color{orange}}
 
 % fix for pandoc build
 \newcommand{\passthrough}{}
