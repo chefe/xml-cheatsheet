@@ -12,7 +12,6 @@
 * Sehr leichtgewichtig
 
 ## Nachteile
-
 * JSON ist **keine Dokumenten Markupsprache**
 * **Namespaces** werden **nicht** unterstützt
 * Datenvalidierung (JSONSchema) noch im draft
@@ -37,18 +36,20 @@
 * Objects (`{ ... }`)
 
 ## Unterschied JavaScript zu JSON
-
 * JavaScript erlaubt nicht alle Unicode Zeichen
 * JavaScript hat Keys mit `"`
 * JavaScript kann Funktionen als Wert haben
 * JSON benötigt immer `"`
 
-## XML zu JSON
-
+## XML vs. JSON
 * JSON kompakter, einfacher und leserlicher
-* JSON als Datenexchangeformat, XML als Markupsprache
-* JSON data-zentrischer Nutzen, XML Data- und Dokumentzentrisch und Hyprid
-* XML kennt objekt referenzen
-* XMLSchema kennt komplexe Datentypen und Referenzen, JSONSchema weniger
+* JSON als Datenexchangeformat
+* XML als Markupsprache
+* JSON data-zentrischer Nutzen
+* XML Daten- und Dokumentzentrisch und Hyprid
+* XMLSchema kennt Objektreferenzen
+* XMLSchema kennt komplexe Datentypen
+* JSONSchema bietet nur wenige Möglichkeiten
 * XPath und XQuery stabil und reifer als JSONPath
-* XSLT ermöglicht XML transformationen, neu auch Input von JSON
+* XSLT ermöglicht XML transformationen
+* Input für XSLT kann neu JSON sein

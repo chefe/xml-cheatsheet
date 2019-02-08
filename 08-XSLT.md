@@ -5,8 +5,8 @@ Transformiert Files in anderes Format. Aus vielen Dokumenten
 ein neues Dokument erstellen.
 
 ## Pull vs. Push
-Pull `<apply-template>` Daten werden gebracht.
-Push `<foreach>` Daten werden geholt.
+* Pull `<apply-template>` Daten werden gebracht.
+* Push `<foreach>` Daten werden geholt.
 
 ## Beispiel für einfaches XSLT
 ```xml
@@ -117,5 +117,7 @@ alt="{document('bond_movies_media.xml')/bond_movies/movie[@number='_02']/title}"
 ```
 
 ## Operatoren
-
-`div, &lt;, &gt;, *, format-number(population,'0.00'), round(population div 0.92)`
+```
+div, &lt;, &gt;, *, format-number(population,'0.00'),
+round(population div 0.92)
+```

@@ -1,26 +1,20 @@
 # XML Basics
 
-## Vergleich Binär / Text Dokument
+## Binärdateien
+* kompakte Repräsentation
+* benötigt wenig Speicher
+* weniger Bandbreite für Transport
 
-Binär:
-
-* (+) kompakte Repräsentation
-* (+) benötigt wenig Speicher
-* (+) weniger Bandbreite für Transport
-
-Text:
-
-* (+) Leserlich für Mensch und Maschine
-* (+) einfacheres Parsing
-* (-) Metadaten muss von Text separiert werden
+## Textdateien
+* Leserlich für Mensch und Maschine
+* einfacheres Parsing
+* Metadaten muss von Text separiert werden
 
 ## Metadaten
-
 Metadaten sind Informationen für Information. Beinhaltet;
 Encoding, Version, Autor, Sprache, Representation, ...
 
 ## Markuplanguage
-
 Eine Sprache die Metainformationen von Daten definiert.
 SGML (Vor XML) und XML (Extensible Markup Language)
 
@@ -35,7 +29,7 @@ SGML (Vor XML) und XML (Extensible Markup Language)
 * Konfiguration & Logging
 * Webservices (UDDI)
 * Webinhalte und Zeichensetzung
-* Austausch zwischen Business (B2C / B2B) - erfolgreichsten
+* Austausch zwischen Business (B2C / B2B)
 * Datenaustausch (Data carrier)
 
 ## XML-RPC
@@ -51,17 +45,17 @@ WSDL beschreibt Services, Endpunkte und Responses,
 aus WSDL kann auch code generiert werden.
 
 ## Gleichheit
-Selbes **bitpattern** entspricht **Gleichheit**.
+Selbes **Bit-Pattern** entspricht **Gleichheit**.
 
 ## Equivalence
 Ist die **prozessierte Darstellung** gleich, sind
 die Dokumente **equivalent**.
 
 ## XML-Prolog
+an erste Stelle im Dokument und ist optional
 
-* Erste Stelle im Dokument und ist optional
 ```xml
-<?xml version="1.0" encoding='UTF-8'
+<?xml version="1.0" encoding="UTF-8"
     standalone="yes" ?>
 ```
 
@@ -84,8 +78,8 @@ die Dokumente **equivalent**.
 ```
 
 ## Processing Instruction
+nach Prolog und ist optional
 
-* Nach Prolog und ist optional
 ```xml
 <?xml-stylesheet type="text/xsl"
     href="transformer.xslt" ?>

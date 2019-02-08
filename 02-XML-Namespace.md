@@ -1,8 +1,9 @@
 # XML Namespace
 
 ## URN / URL / URI
-*Uniform Resource Identifier* überklasse von
-Ort (*URLocation*) und Was (URNamespace).
+* Uniform Resource Identifier (URL oder URN)
+* Uniform Resource Location (Wo zu finden)
+* Uniform Resource Number (eindeutiger Identifier)
 
 ## Default-Namespace
 ```xml

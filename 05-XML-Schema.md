@@ -240,19 +240,20 @@ minLength, pattern, totalDigits, whiteSpace
 ## Atomic
 Elemente ohne Subelemente `<xs:element .. />`.
 
-## XML Schema (XSD) Vorteile zu DTDs
-
-- XML verwendet namespaces
-- Komplexere und benutzerdefinierbare Strukturen und Datentypen
-- Validation inline möglich
-- XSD verwendet XML
-- XSD hat Referenzbeziehungen
+## XSD Vorteile zu DTDs
+* XML verwendet Namespaces
+* Komplexere und benutzerdefinierbare Strukturen
+* eigene Datentypen können definert werden
+* Validation inline möglich
+* XSD verwendet XML
+* XSD hat Referenzbeziehungen
 
 ## Gründe für XML Schemas
-
-1. XML Schema von Nutzerdefiniert und ermöglicht direkte Validierung.
-2. Validatoren generell Deterministisch, XMLSchema für Datenstrukturbeschreibung nutzen.
-3. XMLSchema beim schreiben oder lesen für die Validierung verwenden.
+* XML Schema kann vom Nutzer definiert werden
+* ermöglicht direkte Validierung des Dokument
+* Validatoren sind generell Deterministisch
+* für Datenstrukturbeschreibung nutzen
+* beim schreiben oder lesen für Validierung
 
 ## Dokumentation
 * `<annotation>` ist Container

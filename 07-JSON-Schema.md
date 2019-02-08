@@ -55,6 +55,7 @@ properties, additionalProperties
       "type": "object",
       "properties": {
         "name": { "type": "string" },
+        "stuntman": { "type": "boolean" },
         "gender": {
           "enum": ["female", "male"]
         }
@@ -129,8 +130,6 @@ properties, additionalProperties
 ```
 
 ## Techniken für komplexe Strukturen
-
 * **Reuse**: Wiederverwenden von Referenzen
 * **Rekursion**: In sich selbst Wiederverwendent
-* **Extend**: Erweitern (`anyOf`)
-
+* **Extend**: Erweitern (`allOf`)
